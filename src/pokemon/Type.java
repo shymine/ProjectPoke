@@ -1,16 +1,19 @@
 package pokemon;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Type {
     private String name;
     private ArrayList<Type> faiblesses;
     private ArrayList<Type> resistances;
+    private ArrayList<Type> immunites;
 
     public Type(String name) {
         this.name = name;
         this.faiblesses = new ArrayList<>();
         this.resistances = new ArrayList<>();
+        this.immunites = new ArrayList<>();
     }
 
     public void addFaiblesse(Type t) {
@@ -20,7 +23,9 @@ public class Type {
     public void addResistance(Type t) {
         this.resistances.add(t);
     }
-
+    public void addImmunite(Type t) {
+        this.immunites.add(t);
+    }
     public String getName() {
         return name;
     }
@@ -33,6 +38,10 @@ public class Type {
         return resistances;
     }
 
+    public ArrayList<Type> getImmunites() {
+        return immunites;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -43,10 +52,19 @@ public class Type {
 
     @Override
     public String toString() {
-        return "pokemon.Type{" +
+        return "Type{" +
                 "name='" + name + '\'' +
-                ", faiblesses=" + faiblesses +
-                ", resistances=" + resistances +
+                ", faiblesses=" + typeListToString(faiblesses) +
+                ", resistances=" + typeListToString(resistances) +
+                ", immunites=" + typeListToString(immunites) +
                 '}';
+    }
+
+    public static String typeListToString(List<Type> l) {
+        String res = "";
+        for(Type t : l) {
+            res += t.getName()+";";
+        }
+        return res;
     }
 }

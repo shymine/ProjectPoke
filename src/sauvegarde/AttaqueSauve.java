@@ -16,11 +16,10 @@ public class AttaqueSauve implements Sauvegarde<Attaque> {
         try {
             bw = new BufferedWriter(new FileWriter(fichier));
             for(Attaque a : c) {
-                String res = "Attaque;"+
-                        a.getName()+";"+
-                        a.getDescription()+";"+
-                        a.getType().getName()+";"+
-                        a.getPuissance()+";"+
+                String res = a.getName()+","+
+                        a.getDescription()+","+
+                        a.getType().getName()+","+
+                        a.getPuissance()+","+
                         a.getCategorie().name();
                 res+="\n";
                 bw.write(res);

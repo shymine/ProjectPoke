@@ -100,4 +100,19 @@ public class Pokemon {
     public void setVitesse(int vitesse) {
         this.vitesse = vitesse;
     }
+
+    @Override
+    public String toString() {
+        return "Pokemon{" +
+                "name='" + name + '\'' +
+                ", types=" + Type.typeListToString(types) +
+                ", possibles_attaques=" + Attaque.attaqueListToString(possibles_attaques) +
+                ", pv=" + pv +
+                ", attaque=" + attaque +
+                ", defence=" + defence +
+                ", attaque_speciale=" + attaque_speciale +
+                ", defence_speciale=" + defence_speciale +
+                ", vitesse=" + vitesse +
+                '}';
+    }
 }

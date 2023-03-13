@@ -16,19 +16,19 @@ public class PokemonSauve implements Sauvegarde<Pokemon>{
         try {
             bw = new BufferedWriter(new FileWriter(fichier));
             for(Pokemon p : c) {
-                String res = "Pokemon;"+p.getName()+";"
-                        +p.getPv()+";"
-                        +p.getAttaque()+";"
-                        +p.getDefence()+";"
-                        +p.getAttaque_speciale()+";"
-                        +p.getDefence_speciale()+";"
-                        +p.getVitesse()+";types;";
+                String res = p.getName()+","
+                        +p.getPv()+","
+                        +p.getAttaque()+","
+                        +p.getDefence()+","
+                        +p.getAttaque_speciale()+","
+                        +p.getDefence_speciale()+","
+                        +p.getVitesse()+",types,";
                 for(Type t: p.getTypes()) {
-                    res+=t.getName()+";";
+                    res+=t.getName()+",";
                 }
                 res+="possibles_attaques";
                 for(Attaque a: p.getPossibles_attaques()) {
-                    res+=";"+a.getName();
+                    res+=","+a.getName();
                 }
                 res+="\n";
                 bw.write(res);

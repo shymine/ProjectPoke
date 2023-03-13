@@ -1,5 +1,6 @@
 package pokemon;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Attaque {
@@ -52,12 +53,20 @@ public class Attaque {
 
     @Override
     public String toString() {
-        return "pokemon.Attaque{" +
+        return "Attaque{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", type=" + type +
+                ", type=" + type.getName() +
                 ", puissance=" + puissance +
                 ", categorie=" + categorie +
                 '}';
+    }
+
+    public static String attaqueListToString(List<Attaque> l) {
+        String res = "";
+        for(Attaque t : l) {
+            res += t.getName()+";";
+        }
+        return res;
     }
 }
