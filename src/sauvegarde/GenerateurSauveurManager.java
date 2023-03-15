@@ -9,15 +9,15 @@ import java.util.Collection;
 import java.util.List;
 
 public class GenerateurSauveurManager {
-    private PokeGenerateur pokeGenerateur;
-    private TypeGenerateur typeGenerateur;
-    private AttaqueGenerateur attaqueGenerateur;
-    private PokemonSauve pokemonSauve;
-    private TypeSauve typeSauve;
-    private AttaqueSauve attaqueSauve;
-    private final String pokeFile = "ressources/pokemons.csv";
-    private final String typeFile = "ressources/types.csv";
-    private final String attaqueFile = "ressources/attaques.csv";
+    private final PokeGenerateur pokeGenerateur;
+    private final TypeGenerateur typeGenerateur;
+    private final AttaqueGenerateur attaqueGenerateur;
+    private final PokemonSauve pokemonSauve;
+    private final TypeSauve typeSauve;
+    private final AttaqueSauve attaqueSauve;
+    private final String pokeFile = "resources/pokemons.csv";
+    private final String typeFile = "resources/types.csv";
+    private final String attaqueFile = "resources/attaques.csv";
 
     public GenerateurSauveurManager() {
         this.pokeGenerateur = new PokeGenerateur();

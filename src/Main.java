@@ -13,6 +13,6 @@ public class Main {
         Triple<List<Type>,List<Attaque>,List<Pokemon>> res = manager.genere();
         System.out.println(res.getPremier());
         System.out.println(res.getSecond());
-        System.out.println(res.getTroisième());
+        System.out.println(res.getTroisieme());
     }
 }

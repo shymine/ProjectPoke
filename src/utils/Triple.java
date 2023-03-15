@@ -3,12 +3,12 @@ package utils;
 public class Triple <A,B,C>{
     private final A premier;
     private final B second;
-    private final C troisième;
+    private final C troisieme;
 
-    public Triple(A premier, B second, C troisième) {
+    public Triple(A premier, B second, C troisieme) {
         this.premier = premier;
         this.second = second;
-        this.troisième = troisième;
+        this.troisieme = troisieme;
     }
 
     public A getPremier() {
@@ -19,7 +19,7 @@ public class Triple <A,B,C>{
         return second;
     }
 
-    public C getTroisième() {
-        return troisième;
+    public C getTroisieme() {
+        return troisieme;
     }
 }
