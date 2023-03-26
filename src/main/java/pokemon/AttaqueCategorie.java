@@ -1,4 +1,4 @@
-package pokemon;
+package main.java.pokemon;
 
 public enum AttaqueCategorie {
     PHYSIQUE,

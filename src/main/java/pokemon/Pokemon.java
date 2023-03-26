@@ -1,7 +1,7 @@
-package pokemon;
+package main.java.pokemon;
 
-import exceptions.AttaqueNonApprenableException;
-import pokemon.Attaque;
+import main.java.exceptions.AttaqueNonApprenableException;
+import main.java.pokemon.Attaque;
 
 import java.util.ArrayList;
 

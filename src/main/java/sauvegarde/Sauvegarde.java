@@ -1,4 +1,4 @@
-package sauvegarde;
+package main.java.sauvegarde;
 
 import java.util.Collection;
 

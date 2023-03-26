@@ -1,9 +1,9 @@
-package sauvegarde;
+package main.java.sauvegarde;
 
-import pokemon.Attaque;
-import pokemon.Pokemon;
-import pokemon.Type;
-import utils.Triple;
+import main.java.pokemon.Attaque;
+import main.java.pokemon.Pokemon;
+import main.java.pokemon.Type;
+import main.java.utils.Triple;
 
 import java.util.Collection;
 import java.util.List;

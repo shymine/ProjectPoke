@@ -1,4 +1,4 @@
-package utils;
+package main.java.utils;
 
 public class Triple <A,B,C>{
     private final A premier;

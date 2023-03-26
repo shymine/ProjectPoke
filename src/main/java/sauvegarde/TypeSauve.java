@@ -1,6 +1,6 @@
-package sauvegarde;
+package main.java.sauvegarde;
 
-import pokemon.Type;
+import main.java.pokemon.Type;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

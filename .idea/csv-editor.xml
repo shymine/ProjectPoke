@@ -3,21 +3,21 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\ressources\attaques.csv">
+        <entry key="\resources\attaques.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\ressources\pokemons.csv">
+        <entry key="\resources\pokemons.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\ressources\types.csv">
+        <entry key="\resources\types.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

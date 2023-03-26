@@ -1,8 +1,8 @@
-import pokemon.Attaque;
-import pokemon.Pokemon;
-import pokemon.Type;
-import sauvegarde.GenerateurSauveurManager;
-import utils.Triple;
+import main.java.pokemon.Attaque;
+import main.java.pokemon.Pokemon;
+import main.java.pokemon.Type;
+import main.java.sauvegarde.GenerateurSauveurManager;
+import main.java.utils.Triple;
 
 import java.util.List;
 

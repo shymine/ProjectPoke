@@ -1,9 +1,9 @@
-package sauvegarde;
+package main.java.sauvegarde;
 
-import exceptions.TypeDontExistException;
-import pokemon.Attaque;
-import pokemon.AttaqueCategorie;
-import pokemon.Type;
+import main.java.exceptions.TypeDontExistException;
+import main.java.pokemon.Attaque;
+import main.java.pokemon.AttaqueCategorie;
+import main.java.pokemon.Type;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package exceptions;
+package main.java.exceptions;
 
 public class TypeDontExistException extends DontExistException{
     public TypeDontExistException(String s) {

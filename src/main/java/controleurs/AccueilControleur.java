@@ -1,4 +1,4 @@
-package controleurs;
+package main.java.controleurs;
 
 import javafx.fxml.FXML;
 
